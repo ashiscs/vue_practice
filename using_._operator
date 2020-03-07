@@ -1,0 +1,24 @@
+HTML :-
+
+<div id = "root">
+<ul>
+<li v-for = "cat in cats">
+  {{ cat.name }}
+</li>
+</ul>
+</div>
+
+---------------------------------------------------------------------
+
+VUE :-
+
+new Vue({
+  el: '#root',
+  data: {
+   cats: [
+   { name: 'kitkat'},
+  { name: 'fish'},
+  {name: 'henry'}
+   ]
+  }
+})
