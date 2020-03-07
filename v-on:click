@@ -1,0 +1,34 @@
+HTML :-
+
+<div id = "root">
+<input v-model = "newCat">
+<button v-on:click="addKitty">
+ + ADD
+</button>
+<ul>
+<li v-for = "cat in cats">
+  {{ cat.name }}
+</li>
+</ul>
+</div>
+
+-----------------------------------------------------------------
+
+VUE :-
+
+new Vue({
+  el: '#root',
+  data: {
+   cats: [
+   { name: 'kitkat'},
+  { name: 'fish'},
+  {name: 'henry'}
+   ],
+   newCat: ''
+  },
+  methods: {
+  addKitty: function() {
+	return this.cats.push({name: this.newCat})
+}
+  }
+})
