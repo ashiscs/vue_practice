@@ -1,0 +1,20 @@
+HTML PART :-
+
+<div id = "root">
+Email
+<br>
+<input v-model="email">
+<br>
+<button onclick="alert('signed up man')" v-bind:disabled="email.length < 2">
+Submit
+</button>
+</div>
+
+VUE PART :-
+
+new Vue({
+  el: '#root',
+  data: {
+    email: ''
+  }
+})
