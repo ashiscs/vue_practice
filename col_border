@@ -1,0 +1,30 @@
+HTML :-
+
+<div id = "root">
+Email
+<br>
+<input v-model="email":class="{red: email.length < 2}">
+<br>
+<button onclick="alert('signed up man')" :disabled="email.length < 2">
+Submit
+</button>
+</div>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CSS :-
+
+.red{
+  border: 2px solid red;
+  }
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+VUE :-
+
+new Vue({
+  el: '#root',
+  data: {
+    email: ''
+  }
+})
