@@ -1,0 +1,25 @@
+HTML PART :-
+
+<div id = "root">
+<div v-if="count === 1">
+Red
+</div>
+<div v-else-if="count === 2">
+Blue
+</div>
+<div v-else>
+Green
+</div>
+</div>
+
+```````````````````````````````````````````````````````````````````````````````````````
+
+
+VUE PART :-
+
+new Vue({
+el: '#root',
+data: {
+count : 3
+}
+})
